@@ -31,10 +31,12 @@ h5 {
     padding: 20px;
     vertical-align: top;
     text-align: center;
+    position: fixed;
+    height: 100%;
 }
 
 .corpo {
-    padding-left: 15%;
+    padding-left: 25%;
     padding-right: 15%;
     vertical-align: top;
 }
@@ -60,4 +62,14 @@ h5 {
 
 .card-box-body {
     margin-left: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    font-weight: bold;
 }
