@@ -1,34 +1,38 @@
-body {
-    background-color: #0e0f10;
-    margin: 0;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
+/* vai aplicar em todos elementos */
+* {
+    /* defini se a borda será dentro ou fora do elemento */
+    box-sizing: border-box;
+    /* margem da página, se não colocar zero "0", vai ter alguma margem */
     margin: 0px;
     padding: 0px;
 }
 
+/* vai colocar essas modificações em tudo que estiver dentro do "body" */
+body {
+    /* cor do fundo */
+    background-color: #0e0f10;
+    /* cor do texto */
+    color: white;
+    /* fonte do texto */
+    font-family: 'Poppins', sans-serif;
+}
+
+
 .tabela {
+    /* largura do conteúdo */
     width: 100%;
+    /* altura do conteúdo */
     height: 100vh;
+    /* cria uma borda no elemento,conteúdo */
     border-collapse: collapse;
 }
 
-.cabecario {
-    background-color: black;
-    color: white;
-    height: 200px;
-}
 
 .menu {
     background-color: #1d1d22;
+    /* largura do conteúdo */
     width: 10%;
+    /* espaço entre o conteúdo e a borda */
     padding: 20px;
     vertical-align: top;
     text-align: center;
@@ -37,22 +41,31 @@ h5 {
 }
 
 .corpo {
+    /* espaço entre o conteúdo e a borda, lado direito*/
     padding-left: 25%;
+    /* espaço entre o conteúdo e a borda, lado esquerdo*/
     padding-right: 15%;
+    /* alinhamento vertical, do texto */
     vertical-align: top;
 }
 
 .title {
+    /* margem da página, no topo da página, se não colocar zero "0", vai ter */
     margin-top: 60px;
+    /* margem da página, fundo, se não colocar zero "0", vai ter */
     margin-bottom: 60px;
-    font-size: 40px;
+    /* alinhamento de texto, centralizou */
     text-align: center;
 }
 
 .card-box {
+    /* cor de fundo */
     background-color: #070708;
+    /* espaço entre o conteúdo e a borda  */
     padding: 30px;
+    /* arredonda a borda */
     border-radius: 30px;
+    /* mostrar */
     display: flex;
 }
 
@@ -78,8 +91,77 @@ h5 {
     font-size: 30px;
 }
 
-.logo {
-    font-size: 30px;
+.menu .logo {
+    font-size: 40px;
     font-weight: 600;
     border-bottom: 5px solid #25ca7f;
+}
+
+#sobreMim {
+    padding-bottom: 30px;
+    min-height: 1000px;
+}
+
+.educacao {
+    height: 1000px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.service-item {
+    /* fazer calculo para ter a margem correta,*/
+    width: calc(33.33% - 30px);
+    /* coloca uma margem de espaço, entre os elementos */
+    margin: 15px;
+}
+
+.service-item-card {
+    background-color: #070708;
+    border: 1px solid black;
+    border-radius: 16px;
+    height: 350px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item-card:hover {
+    border: 1px solid #25ca7f;
+}
+
+
+.service-item-card-icon {
+    background-color: #0e0f10;
+    height: 100px;
+    border: 1px solid black;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item-card-icon:hover {
+    border: 1px solid #25ca7f;
+}
+
+.service-item-card-icon i {
+    font-size: 30px;
+}
+
+.service-item-card-title {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.service-item-card-description {
+    text-align: center;
 }
