@@ -1,3 +1,8 @@
+html {
+    /* deixar os links, movimentos dentro da página, mais suaves */
+    scroll-behavior: smooth;
+}
+
 /* vai aplicar em todos elementos */
 * {
     /* defini se a borda será dentro ou fora do elemento */
@@ -59,12 +64,6 @@ body {
 }
 
 .card-box {
-    /* cor de fundo */
-    background-color: #070708;
-    /* espaço entre o conteúdo e a borda  */
-    padding: 30px;
-    /* arredonda a borda */
-    border-radius: 30px;
     /* mostrar */
     display: flex;
 }
@@ -102,9 +101,7 @@ body {
     min-height: 1000px;
 }
 
-.educacao {
-    height: 1000px;
-}
+
 
 .service-container {
     display: flex;
@@ -121,11 +118,8 @@ body {
 }
 
 .service-item-card {
-    background-color: #070708;
     border: 1px solid black;
-    border-radius: 16px;
     height: 350px;
-    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,4 +158,64 @@ body {
 
 .service-item-card-description {
     text-align: center;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.flexbox-item {
+    width: 50%;
+}
+
+.card {
+    /* cor de fundo */
+    background-color: #070708;
+    /* espaço entre o conteúdo e a borda  */
+    padding: 30px;
+    /* arredonda a borda */
+    border-radius: 30px;
+}
+
+.timeline-item {
+    padding-bottom: 30px;
+    border-left: 1px solid #25ca7f;
+    padding-left: 16px;
+    position: relative;
+}
+
+.timeline-item-period {
+    font-size: 12px;
+    color: #25ca7f;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.timeline-item-marker {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    left: -8px;
+}
+
+
+.timeline-item-marker-circule {
+    height: 15px;
+    width: 15px;
+    background: #25ca7f;
+    border-radius: 50%;
+}
+
+.timeline-item-marker-line {
+    height: 1px;
+    width: 15px;
+    background: #25ca7f;
+}
+
+/* deixar espaço no topo, quando usar os links */
+#sobreMim,
+#experiencia,
+#contato {
+    scroll-margin-top: 50px;
 }
