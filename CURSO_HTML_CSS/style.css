@@ -219,3 +219,47 @@ body {
 #contato {
     scroll-margin-top: 50px;
 }
+
+
+.progress-bar {
+    background-color: #0e0f10;
+    height: 8px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+
+.progress-bar-done {
+    background: #25ca7f;
+    height: 100%;
+    border-radius: 8px;
+    position: relative;
+
+}
+
+.progress-bar-check {
+    width: 20px;
+    height: 20px;
+    border: 4px solid #25ca7f;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    background-color: #0e0f10;
+}
+
+.progress-bar-title {
+    position: absolute;
+    top: -30px;
+}
+
+.progress-bar-done-text {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+}
+
+.padding-top-60 {
+    padding-top: 60px;
+}
